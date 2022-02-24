@@ -3,9 +3,10 @@ public class main{
     public static void main(String args[])
     {
         Scanner scan = new Scanner(System.in);
-        int value = 500;
-        int bot = 0;
-        int top = 1000;
+
+        long bot = -1;
+        long top = 2_147_483_648L;
+        long value = top/2;
         while(true){
             System.out.println("Is number more than " + value + " 1 - yes, 0 - no");
             int x = scan.nextInt();
